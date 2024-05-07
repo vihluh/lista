@@ -42,7 +42,7 @@ public class MyAdapter extends RecyclerView.Adapter { //herda o adapter do Recyc
 
         //preenche a UI com os dados
         ImageView imvphoto = v.findViewById(R.id.imvPhoto);
-        imvphoto.setImageURI(myItem.photo);
+        imvphoto.setImageBitmap(myItem.photo);
 
         TextView tvTitle = v.findViewById(R.id.tvTitle);
         tvTitle.setText(myItem.title);
